@@ -36,6 +36,6 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'dockerconn'
-    repository: 'dockerconn'
+    repository: 'repo1'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
