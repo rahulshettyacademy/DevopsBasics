@@ -27,6 +27,6 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'dock1'
-    repository: 'fn'
+    repository: 'rahulshettyacademy/fn'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
