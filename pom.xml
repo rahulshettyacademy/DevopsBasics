@@ -58,6 +58,10 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>2.3.2</version>
+          <configuration>
+              <fork>true</fork>
+                   <executable>/usr/lib/jvm/java-11-openjdk-amd64/bin/javac</executable>
+          <configuration>         
         </plugin>
 
         <plugin>
