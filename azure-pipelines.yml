@@ -9,6 +9,18 @@ trigger:
 pool: self-hosted-dodel
 
 steps:
+
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '8' 
+    jdkArchitectureOption: x64
+    jdkSourceOption: # Options: AzureStorage, LocalDirectory
+    #jdkFile: # Required when jdkSourceOption == LocalDirectory
+    #azureResourceManagerEndpoint: # Required when jdkSourceOption == AzureStorage
+    #azureStorageAccountName: # Required when jdkSourceOption == AzureStorage
+    #azureContainerName: # Required when jdkSourceOption == AzureStorage
+    #azureCommonVirtualFile: # Required when jdkSourceOption == AzureStorage
+    jdkDestinationDirectory:  C:\Program Files (x86)\Java\jdk1.8.0_251
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -19,3 +31,4 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
