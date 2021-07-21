@@ -14,8 +14,8 @@ steps:
     #versionSpec: '11' 
     jdkArchitectureOption: x64
     jdkSourceOption: LocalDirectory
-    jdkFile: "C:\Windows\System32\agent\openjdk-16.0.1_windows-x64_bin"   
-    jdkDestinationDirectory: "C:\Windows\System32\agent"
+    jdkFile: 'C:\Windows\System32\agent\openjdk-16.0.1_windows-x64_bin'   
+    jdkDestinationDirectory: 'C:\Windows\System32\agent'
     leanDestinationDirectory: true
 - task: Maven@3
   inputs:
