@@ -6,8 +6,7 @@
 trigger:
 - master
 
-pool:
-  vmImage: ubuntu-latest
+pool: self-hosted-dodel
 
 steps:
 - task: Maven@3
