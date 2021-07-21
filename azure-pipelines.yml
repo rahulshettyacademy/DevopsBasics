@@ -12,10 +12,10 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    #mavenOptions: '-Xmx2072m'
-    #javaHomeOption: 'JDKVersion'
-    #jdkVersionOption: '1.8'
-    #jdkArchitectureOption: 'x64'
+    mavenOptions: '-Xmx2072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
