@@ -18,7 +18,7 @@ pipeline{
 		stage('Build') {
 			steps {
 			
-			   sh 'docker build -t akinaregbesola/class_app:1.0 .'
+				sh 'docker build -t akinaregbesola/class_app:${BUILD_NUMBER} .'
 			}
 		}
 		
@@ -32,7 +32,7 @@ pipeline{
 		stage('Push') {
 			
 			steps {
-			   sh 'docker push akinaregbesola/class_app:1.0'
+				   sh 'docker push akinaregbesola/class_app:${BUILD_NUMBER'
 			}
 		}
 		}
