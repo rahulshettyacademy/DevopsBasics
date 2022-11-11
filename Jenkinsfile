@@ -3,7 +3,7 @@ pipeline{
 
    agent any
 
-	//create dockerhub credential in github with TOKEN
+	//create dockerhub credential in github with your dockerhub Username and Password/Token
 	environment {
 		DOCKERHUB_CREDENTIALS=credentials('dockerhub')
 	}
