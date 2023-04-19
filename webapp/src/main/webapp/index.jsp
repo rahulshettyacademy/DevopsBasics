@@ -6,5 +6,4 @@
 
 
 
-<h2> WELCOME TO AHDUS TECHNOLOGY </H2>
 
