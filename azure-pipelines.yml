@@ -23,12 +23,13 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    targetFolder: '$(Build.ArtifactStagingDirectory)'    
-
-- task: PublishBuildArtifacts@1    
-  displayName: 'Publish Artifact: drop'
+    Contents: '''**/*.jar'''
+    TargetFolder: '$(build.artifactstagingdirectory)'
+- task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(build.artifactstagingdirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'jarfile'
+    publishLocation: 'Container'
 
 
 
