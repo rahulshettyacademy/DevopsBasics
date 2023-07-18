@@ -7,7 +7,11 @@ trigger:
 - master
 
 pool:
-  name: dev
+  name: Default
+- task: CopyFiles@2
+  inputs:
+    Contents: '**'
+    TargetFolder: 
 
 steps:
 - task: Maven@3
