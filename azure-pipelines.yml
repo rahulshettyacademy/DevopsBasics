@@ -7,9 +7,6 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
-
-pool:
   name: Default
 - task: CopyFiles@2
   inputs:
