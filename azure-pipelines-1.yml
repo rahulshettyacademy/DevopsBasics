@@ -22,11 +22,11 @@ steps:
     goals: 'package'
 - task: Docker@2
   inputs:
-    containerRegistry: 'imageregistry'
+    containerRegistry: 'acrsvconnection'
     command: 'login'
 - task: Docker@2
   inputs:
-    containerRegistry: 'imageregistry'
-    repository: 'tjawed/devops'
+    containerRegistry: 'acrsvconnection'
+    repository: 'acr65'
     command: 'buildAndPush'
     Dockerfile: '**/AzureDockerfile'
